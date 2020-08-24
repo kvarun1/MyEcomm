@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.mbinfo.myapplication.RoundedImageView
+                    android:id="@+id/butone"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/women_shoes" />
+
+                <TextView
+                    android:id="@+id/textone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/butone"
+                    android:layout_marginTop="15dp"
+                    android:text="Ankle Boots"
+                    android:textColor="#515C6F"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dollarone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textone"
+                    android:layout_marginTop="5dp"
+                    android:text="$111"
+                    android:textStyle="bold"
+                    android:textColor="#515C6F"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.mbinfo.myapplication.RoundedImageView
+                    android:id="@+id/buto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/backpack" />
+
+                <TextView
+                    android:id="@+id/texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/butone"
+                    android:layout_marginTop="15dp"
+                    android:text="BagPacks"
+                    android:textColor="#515C6F"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dollatrwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textone"
+                    android:layout_marginTop="5dp"
+                    android:text="$10.18"
+                    android:textStyle="bold"
+                    android:textColor="#515C6F"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.mbinfo.myapplication.RoundedImageView
+                    android:id="@+id/buttwo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scarf" />
+
+                <TextView
+                    android:id="@+id/textdollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/butone"
+                    android:layout_marginTop="15dp"
+                    android:text="Red Scaf"
+                    android:textColor="#515C6F"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dollarthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textone"
+                    android:layout_marginTop="5dp"
+                    android:text="$11.78"
+                    android:textStyle="bold"
+                    android:textColor="#515C6F"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
